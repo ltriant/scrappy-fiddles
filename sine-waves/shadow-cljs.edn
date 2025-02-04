@@ -1,0 +1,12 @@
+{:source-paths
+ ["src/main"]
+
+ :dependencies
+ []
+
+ :dev-http {8080 "public"}
+
+ :builds
+ {:frontend
+  {:target :browser
+   :modules {:main {:init-fn sine-waves.core/init}}}}}
